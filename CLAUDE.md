@@ -35,7 +35,7 @@ There is no test suite, no linter, no package manager, no `node_modules`.
 
 **`scripts/typography.py`** splits HTML on tags, applies nbsp only to text content, and is safe to run repeatedly. Any Python edit that writes Czech text back to disk should be followed by running this script. `NBSP_LETTERS = "aiouvszkAIOUVSZK"`.
 
-**`css/styles.css`** is a single file built around design tokens (`--paper`, `--paper-soft`, `--ink`, `--accent`, `--moss`, font-stack tokens). Warm paper palette with Fraunces (variable) headings and Inter body. Visual primitives: polaroid-style `.photo-card` (with `.photo-card--right` variant for alternating rotation), SVG wave dividers between sections (`.wave--paper-soft` / `.wave--paper`), `.prose` container for long-form text. Don't introduce a framework — extend the tokens and existing primitives.
+**`css/styles.css`** is a single file built around design tokens (`--paper`, `--paper-soft`, `--ink`, `--accent`, `--moss`, font-stack tokens). Warm paper palette with Fraunces (variable) headings and Inter body. Visual primitives: polaroid-style `.photo-card` (sits straight; `.photo-card--right` variant kept in HTML but currently styled identically — no rotation per user preference), SVG wave dividers between sections (`.wave--paper-soft` / `.wave--paper`), `.prose` container for long-form text. Don't introduce a framework — extend the tokens and existing primitives.
 
 ## Working with existing content
 

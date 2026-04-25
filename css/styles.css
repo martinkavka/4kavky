@@ -147,7 +147,6 @@ section { padding: 72px 0; position: relative; }
   font-size: 0.95rem;
   text-transform: uppercase;
   margin-bottom: 24px;
-  transform: rotate(-1.5deg);
 }
 
 /* ---------- Wave dividers ---------- */
@@ -203,11 +202,9 @@ section { padding: 72px 0; position: relative; }
   box-shadow: var(--shadow-card);
   border-radius: 4px;
   display: inline-block;
-  transform: rotate(-1.5deg);
   transition: transform 0.25s ease;
 }
-.photo-card--right { transform: rotate(1.5deg); }
-.photo-card:hover, .photo-card--right:hover { transform: rotate(0deg) scale(1.02); }
+.photo-card:hover, .photo-card--right:hover { transform: scale(1.02); }
 .photo-card img { border-radius: 2px; }
 .photo-card figcaption {
   font-family: var(--font-serif);
